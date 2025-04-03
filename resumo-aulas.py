@@ -3,9 +3,9 @@ import speech_recognition as sr
 import subprocess
 import os
 from pydub import AudioSegment
-
+import env
 # Configurar a chave API da OpenAI
-openai.api_key = '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'
+openai.api_key = '.env'
 
 def converter_audio(audio_path):
     try:
